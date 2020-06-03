@@ -1,10 +1,15 @@
+import { Toast } from 'vant'
+import storage from './storage.js'
+
 export default {
-  /**
-   * @param {Number} num 数值
-   * @returns {String} 处理后的字符串
-   * @description 如果传入的数值小于10，即位数只有1位，则在前面补充0
-   */
-  getHandledValue(num){
-    return num < 10 ? '0' + num : num
-  }
+  getUrlKey(name) {
+    return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.href) || [, ""])[1].replace(/\+/g, '%20')) || null
+  },    
+  message(msg) {
+    Toast(msg)
+  },
+  isLogin() {
+    let token = storage.getStorage('token')
+    return token ? true : false
+  },
 }

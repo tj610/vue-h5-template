@@ -32,6 +32,7 @@ module.exports = {
   },
   // 开发环境
   devServer: {
+    disableHostCheck: true,
     open: false,
     host: '192.168.1.121',
     port: 84,
@@ -44,6 +45,5 @@ module.exports = {
     //     }
     //   }
     // },
-    disableHostCheck: true
   }
 }

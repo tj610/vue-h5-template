@@ -1,13 +1,21 @@
 <template>
-  <div class="login">login</div>
+	<div class="singlePage">
+    login
+	</div>
 </template>
 
 <script>
+import { apiGetMsgCode, apiOnLogin } from '@/http/api'
 export default {
-
+  name: 'login',
+  data() {
+    return {
+    }
+  },
+  methods: {
+  },
 }
 </script>
 
-<style>
-
+<style scoped>
 </style>
