@@ -5,7 +5,6 @@ export default {
 	baseUrl: {
     dev: 'http://litj.jieruivip.cn/d/info/',
     pre: 'http://th5.jieruivip.cn/info/',
-    ts2: 'http://th5.jieruivip.cn/ts2info/',
     pro: 'http://h5.jieruiedu.com/info/'
   },
   // 项目入口
