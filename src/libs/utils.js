@@ -12,4 +12,8 @@ export default {
     let token = storage.getStorage('token')
     return token ? true : false
   },
+  isNumber(val) {
+      let re = /^\d+$/
+      return re.test(val) ? true : false
+  },
 }

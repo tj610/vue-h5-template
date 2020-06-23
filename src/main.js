@@ -7,6 +7,8 @@ import utils from '@/libs/utils'
 import storage from '@/libs/storage'
 import * as filters from '@/libs/filters'
 
+import './vant/index'
+
 import '@/assets/css/style.css'
 import '@/libs/rem'
 import '@/libs/fontsize'
